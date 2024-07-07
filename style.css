@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    width: 1250px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+h1 h2 h3 h4 p{
+    margin: 0;
+}
+nav{
+    background-color: #02918b;
+}
+nav .row{
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    padding: 26px 25px;
+}
+nav ul li a{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+}
+#banner{
+    background-image: url('./img1.png');
+    height: 725px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#banner .row{
+    align-items: center;
+    justify-content: center;
+    height: 725px;
+    color: #ffffff;
+    flex-direction: column;
+}
+#banner h4{
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+}
+#banner h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 13px;
+}
+#banner p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+#banner img{
+    margin: 30px 0 52px 0;
+}
+#banner button{
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #cfc91d;
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+#banner button::after{
+    content: '';
+    background: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+#banner button:hover::after {
+    width: 100%;
+}
+#banner button::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: black;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+#banner button:hover::before {
+    width: 100%;
+}
+
+
+   
